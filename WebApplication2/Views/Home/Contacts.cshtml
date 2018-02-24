@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Contacts";
+}
+
+<h2>Contacts</h2>
+
+<div>
+  @{
+    foreach (var k in ViewBag.Contacts)
+    {
+      <p>@k.firstName, @k.secondName, @k.city, @k.street </p>
+    }
+  }
+</div>
